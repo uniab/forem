@@ -132,7 +132,8 @@ jobs:
     - stage: Deploy
       name: Deploy DEV
       if: type != pull_request
-      install: skip
+      install:
+        - gem install faraday -v 1.8.0
       script: skip
       after_script: skip
       deploy:
@@ -145,7 +146,8 @@ jobs:
     - stage: Deploy
       name: Deploy BenHalpern
       if: type != pull_request
-      install: skip
+      install:
+        - gem install faraday -v 1.8.0
       script: skip
       after_script: skip
       deploy:
