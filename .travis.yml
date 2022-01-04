@@ -1,7 +1,5 @@
 dist: focal
 branches:
-  only:
-    - main
 language: ruby
 cache:
   bundler: true
@@ -145,7 +143,7 @@ jobs:
         - bash scripts/after_deploy.sh
     - stage: Deploy
       name: Deploy BenHalpern
-      if: type != pull_request
+      if: type == pull_request
       install:
         - gem install faraday -v 1.8.0
       script: skip
