@@ -1,2 +1,4 @@
 contact_prompts:
   if_any_questions_html: <a href="/contact">联系我们</a> 如果您有任何问题。
+  contact_prompts:
+    if_continued_trouble_html: <a href="/contact">联系我们</a>如果您在访问网站的过程中继续遇到麻烦。
