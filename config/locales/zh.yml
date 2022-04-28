@@ -1,1 +1,2 @@
-{}
+contact_prompts:
+  if_any_questions_html: <a href="/contact">联系我们</a> 如果您有任何问题。
